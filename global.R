@@ -39,9 +39,9 @@ library(readxl)
 #### data import and format ####
 
 #data import
-ARAMOB_data <- as.data.frame(read_xlsx(here::here("ARAMOB_data.xlsx"), sheet = "data"))
-EUNIS_list <- as.data.frame(read_xlsx(here::here("ARAMOB_data.xlsx"), sheet = "eunis"))
-TRAIT_list <- as.data.frame(read_xlsx(here::here("ARAMOB_data.xlsx"), sheet = "traits"))
+ARAMOB_data <- as.data.frame(read_xlsx(here::here("data_scheme.xlsx"), sheet = "data"))
+EUNIS_list <- as.data.frame(read_xlsx(here::here("data_scheme.xlsx"), sheet = "eunis"))
+TRAIT_list <- as.data.frame(read_xlsx(here::here("data_scheme.xlsx"), sheet = "traits"))
 
 #correct data format
 ARAMOB_data$startdate <- as.Date(ARAMOB_data$startdate)

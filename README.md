@@ -1,1 +1,9 @@
-# ARAapp
+## ARAapp
+
+R code to reproduce the analyses of the ARAapp in a local environment
+
+# Start
+
+1. Make sure all files (global.R, server.R, ui.R and data_scheme.xlsx) are in the same folder.
+2. Start global.R and install missing packages
+3. Run global.R

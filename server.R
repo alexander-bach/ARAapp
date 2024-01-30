@@ -425,18 +425,18 @@ shinyServer(function(input, output, session) {
     if (HabitatClass == "A") {
       Frequ <-
         SpiderData_FreqFirst[c(Taxon), ] #Choose Taxon from CrossTable (Frequency)
-      #Abundance <- Abundance/ARAMOB_Sites_E$first_sums #Calculate relative Abundance based on Occurence in EUNIS Class
+      Abundance <- Abundance/ARAMOB_Sites_E$first_sums #Calculate relative Abundance based on Occurence in EUNIS Class
       EUNIS <-
         tibble(Abundance, ARAMOB_Sites_E$first)#, rownames(ARAMOB_Sites_E))  #put it together
       
     } else if (HabitatClass != "A" && input$levels == "2nd Level") {
       Frequ <- SpiderData_FreqSecond[c(Taxon), ]
-      #Abundance <- Abundance/ARAMOB_Sites_E$second_sums
+      Abundance <- Abundance/ARAMOB_Sites_E$second_sums
       EUNIS <- tibble(Abundance, ARAMOB_Sites_E$second)
       
     } else if (HabitatClass != "A" && input$levels == "3rd Level") {
       Frequ <- SpiderData_FreqThird[c(Taxon), ]
-      #Abundance <- Abundance/ARAMOB_Sites_E$third_sums
+      Abundance <- Abundance/ARAMOB_Sites_E$third_sums
       EUNIS <- tibble(Abundance, ARAMOB_Sites_E$third)
     }
     

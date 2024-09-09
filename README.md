@@ -1,4 +1,5 @@
 # ARAapp
+https://doi.org/10.1093/database/baae004
 
 R code to reproduce the analyses of the ARAapp in a local environment
 

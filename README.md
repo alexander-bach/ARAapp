@@ -1,4 +1,4 @@
-# ARAapp
+# ARAapp: filling gaps in the ecological knowledge of spiders using an automated and dynamic approach to analyze systematically collected community data
 https://doi.org/10.1093/database/baae004
 
 R code to reproduce the analyses of the ARAapp in a local environment
